@@ -1,11 +1,10 @@
-
 from pyrogram import Client, filters, types
 
 from modules.bot import Bot
 from DB.chat_db import ChatDB
 from DB.lang_utils import kode, lang_flags
 
-from functions.decorators import authorized_only
+from helpers.decorators import authorized_only
 
 
 @Client.on_message(filters.command("lang"))
