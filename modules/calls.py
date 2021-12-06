@@ -24,7 +24,7 @@ from pytgcalls.types.input_stream.quality import (
 )
 from pytgcalls.types.stream import StreamAudioEnded
 
-from helpers.youtube_utils import get_audio_direct_link, get_video_direct_link
+from helpers.yt_utils import get_audio_direct_link, get_video_direct_link
 from .clients import user, call_py
 from .bot import Bot
 from .queue import Queue
