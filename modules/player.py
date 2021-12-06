@@ -13,8 +13,8 @@ from pyrogram import idle
 from pyrogram.types import CallbackQuery
 
 from .calls import leave_from_inactive_call
-from .telegram_call import TelegramPlayer
-from .youtube_call import YoutubePlayer
+from .tg_call import TelegramPlayer
+from .yt_call import YoutubePlayer
 from modules import username as usernames
 from snehabhi import load_module
 
