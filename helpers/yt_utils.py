@@ -61,7 +61,7 @@ def append_to_music(chat_id: int, yt_res):
     stream_result[chat_id] = []
     for count, res in enumerate(yt_res, start=1):
         temp.append(res)
-        if count % 5 == 0:
+        if count % 1 == 0:
             stream_result[chat_id].append(temp)
             temp = []
         if count == len(yt_res):
@@ -70,7 +70,7 @@ def append_to_music(chat_id: int, yt_res):
 
 def yt_search(chat_id, title: str):
     total_search[chat_id] = []
-    rez = VideosSearch(title, limit=5)
+    rez = VideosSearch(title, limit=1)
     results = rez.result()["result"]
     yt_res = []
     append_new_results(chat_id, results, yt_res)
