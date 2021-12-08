@@ -59,7 +59,7 @@ def append_new_results(chat_id: int, results: List, yt_res: List):
 def append_to_music(chat_id: int, yt_res):
     temp = []
     stream_result[chat_id] = []
-    for count, res in enumerate(yt_res, start=1):
+    for count, res in enumerate(yt_res, start):
         temp.append(res)
         if count % 5 == 0:
             stream_result[chat_id].append(temp)
