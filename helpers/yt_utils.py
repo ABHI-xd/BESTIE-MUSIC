@@ -59,7 +59,7 @@ def append_new_results(chat_id: int, results: List, yt_res: List):
 def append_to_music(chat_id: int, yt_res):
     temp = []
     stream_result[chat_id] = []
-    for count, res in enumerate(yt_res, start):
+    for count, res in enumerate(yt_res, start=0):
         temp.append(res)
         if count % 5 == 0:
             stream_result[chat_id].append(temp)
@@ -105,7 +105,7 @@ def prev_search(chat_id: int):
 def extract_info(chat_id: int, result: Dict[int, List]):
     result_str = ""
     res = list(filter(None, result[chat_id]))
-    for count, res in enumerate(res[0], start=1):
+    for count, res in enumerate(res[0], start=0):
         title = res["title"]
         duration = res["duration"]
         more_info = f"https://t.me/{username}?start=ytinfo_{res['yt_id']}"
