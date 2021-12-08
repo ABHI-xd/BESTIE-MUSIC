@@ -15,7 +15,7 @@ class Configs:
     API_ID = int(getenv("API_ID", "0"))
     API_HASH = getenv("API_HASH", "abc123")
     BOT_TOKEN = getenv("BOT_TOKEN", "123:abc")
-    OWNER_ID = int(getenv("OWNER_ID", "0123"))
+    OWNER_ID = int(getenv("OWNER_ID", ""))
     SESSION = getenv("SESSION", "session")
     CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/snehabhi_updates")
     GROUP_LINK = getenv("GROUP_LINK", "https://t.me/snehabhi_server")
