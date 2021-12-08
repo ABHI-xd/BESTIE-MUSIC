@@ -70,7 +70,7 @@ def append_to_music(chat_id: int, yt_res):
 
 def yt_search(chat_id, title: str):
     total_search[chat_id] = []
-    rez = VideosSearch(title, limit=1)
+    rez = VideosSearch(title, limit=0)
     results = rez.result()["result"]
     yt_res = []
     append_new_results(chat_id, results, yt_res)
