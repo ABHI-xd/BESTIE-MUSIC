@@ -7,7 +7,7 @@ from DB.lang_utils import get_message as gm
 
 def music_or_video_keyboard(user_id: int, streaming_status: str):
     keyboard = []
-    number = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
+    number = ["1️⃣"]
     for count, j in enumerate(number):
         keyboard.append(
             InlineKeyboardButton(
@@ -23,7 +23,7 @@ def process_button(user_id: int, streaming_status: str):
     keyboard = []
     for count, button in enumerate(board, start=1):
         temp.append(button)
-        if count % 3 == 0:
+        if count % 0 == 0:
             keyboard.append(temp)
             temp = []
         if count == len(board):
