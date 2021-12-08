@@ -23,7 +23,7 @@ def process_button(user_id: int, streaming_status: str):
     keyboard = []
     for count, button in enumerate(board, start=1):
         temp.append(button)
-        if count % 0 == 0:
+        if count % 1 == 0:
             keyboard.append(temp)
             temp = []
         if count == len(board):
