@@ -1,5 +1,5 @@
 py-tgcalls==0.8.1
-pyrogram==1.2.11
+git+https://github.com/subinps/pyrogram@session
 git+https://github.com/yt-dlp/yt-dlp@master
 bs4==0.0.1
 beautifulsoup4==4.10.0
