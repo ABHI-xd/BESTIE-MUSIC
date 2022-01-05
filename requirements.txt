@@ -1,11 +1,11 @@
 py-tgcalls==0.8.1
 git+https://github.com/pyrogram/pyrogram@master
-git+https://github.com/yt-dlp/yt-dlp@master
+git+https://github.com/EVEXERA/ytdl@master
 bs4==0.0.1
 beautifulsoup4==4.10.0
 requests==2.26.0
 python-dotenv==0.19.2
-youtube-dl==2021.6.6
+
 youtube-search-python==1.5.1
 bs4==0.0.1
 requests==2.26.0
